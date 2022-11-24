@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style>
+		body{
+			background-color: lightskyblue;
+		}
+		h1{
+			color: darkgreen;
+		}
+		#head{
+			background-color: lightgoldenrodyellow;
+			text-align: center;
+			padding: 20px;
+		}
+		#ending{
+			background-color: lightgreen;
+			text-align: center;
+			font-weight: lighter;
+		}
+		.important{
+			background-color: lightblue;
+			text-align: center;
+			padding: 10px;
+		}
+		.important,c1{
+			text-decoration: underline;
+		}
+		h1,c2{
+			font-weight: bold;
+		}
+		.extra .important{
+			color: inherit;
+		}
+
+
+		
+	
+	</style>
+</head>
+<body>
+
+<form method="post" action="http://www.deitel.com">
+	<h1 id=head><c2>Feedback    Form</c2></h1>
+	<p class="important"><c1>Please fill out this form to help us improve our site.</p>
+	
+	Name:
+		<input name = "name" type="text" size = "25"
+		maxlength="30">
+
+
+	<br><label for= "Comments">Comments:</label></br>
+	<textarea id = "Comments" rows ="4" cols = "50" >
+Enter comments here.
+	</textarea></p>
+
+	E-mail Address:
+		<input name = "name" type="text" size = "25"
+		maxlength="30">
+
+	<h3><label>Things you liked:</label></h3>
+		Site design<input type="checkbox" name = "Site design" value="Site design">
+		Links<input type="checkbox" name = "Links" value="Links">
+		Ease of use<input type="checkbox" name="Ease of use" value="Ease of use">
+		Images<input type="checkbox" name="Images" value="Images">
+		Source code<input type="checkbox" name="Source code" value="Source code">
+	
+	<h3>How did you get to our site?:</h3>
+		Search engine<input type="radio" name="Search engine" value="Search engine">
+		Links from another site<input type="radio" name="Links from another site" value="Links from another site">
+		Detail.com website<input type="radio" name="Detail.com website" value="Detail.com website">
+		Reference in the book<input type="radio" name="Reference in the book" value="Reference in the book">
+		Other<input type="radio" name="Other" value="Other">
+	</p>
+
+		<label>Rate our site:
+			<select name="rate">
+			<option value="Amazing" selected>Amazing</option>
+			<option value="Good">Good</option>
+			<option value="Soso">Soso</option>
+			<option value="Disgusting">Disgusting</option>
+			</select>
+		</label>
+		</p>
+
+	<input type="Submit" value="Submit">
+	<input type="Reset" value="Clear">
+	<h3 id="ending">To my second page:<p><a href="Lab2.html">Click here</a>
+</form>	
+
+</body>
+</html>
